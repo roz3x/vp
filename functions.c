@@ -4,6 +4,16 @@
 #define FUNC_PRINT 45
 #define FUNC_XCMP   9
 #define FUNC_JMP   80
+#define FUNC_MOV   99
+
+void f_mov( RAM* r ) {
+	LOG("mov command");
+	u8 src,val;
+	src = r->ins[r->ip++];
+	val = r->ins[r->ip++];
+	r->regs[src] = val;
+	return;
+}
 
 void f_exit(RAM* r ) {
 	LOG("exit command");
@@ -66,7 +76,7 @@ void f_jmp(RAM* r) {
 	return;
 }
 
-static void (*functions[0xff])(RAM* r ) =  {
+static void (*f[0xff])(RAM* r ) =  {
 	[FUNC_SET] = f_set,
 	[FUNC_EXIT]   = f_exit,
 	[FUNC_PRINT]  = f_print,

@@ -8,7 +8,9 @@
 #include "schema.c"
 #include "functions.c"
 
+RAM r;
+
 int main( int argc , char** argv , char** env ) {
-	functions[FUNC_EXIT](NULL );
+	f[FUNC_EXIT](&r);
 	return EXIT_SUCCESS;
 }

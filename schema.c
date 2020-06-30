@@ -8,7 +8,7 @@ struct RAM  {
 	u8 ins[0x200];
 	int ip;
 	u8 regs[10];
-} r ;
+}  ;
 typedef struct RAM RAM;
 
 
