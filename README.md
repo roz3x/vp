@@ -1,6 +1,6 @@
 # virtual processor
 
-* the processor supports havard architecture
+* the processor supports harvard architecture
 * 10 regsiters 
 * 255 bytes instruction buffer
 * 255 bytes data buffer
