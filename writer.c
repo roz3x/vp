@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#include ".tmp.c"
+#include "._a.c"
 
 
 int main ( int argc , char *argv[] , char** env ) {
