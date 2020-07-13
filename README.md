@@ -38,5 +38,10 @@
 
 currently only supports cli usage , and assembly input . the values can be fed via format shown in ```source.asm``` file. 
 to run the pre-writen test 
-	``` source ./run.sh ```
+	```
+	source ./run.sh 
+	```
+and the result SHOULD look like ```LOG.md```
 
+# deps 
+sed and gcc 
