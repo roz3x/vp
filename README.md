@@ -4,7 +4,7 @@
 * 10 regsiters 
 * 255 bytes instruction buffer
 * 255 bytes data buffer
-* 5 instructions 
+* 6 instructions 
 
 
 ## instruction set 
