@@ -54,5 +54,8 @@ to run the pre-writen test
 	```
 and the result SHOULD look like ```LOG.md```
 
+
+or just see the github build [pickle rick](https://github.com/roz3x/vp/runs/885633417?check_suite_focus=true)
+
 # deps 
 sed and gcc 
