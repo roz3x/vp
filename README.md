@@ -45,17 +45,23 @@
 ```
 
 
+# gui 
+
 # usage 
 
-currently only supports cli usage , and assembly input . the values can be fed via format shown in ```source.asm``` file. 
+currently only   assembly input . the values can be fed via format shown in ```source.asm``` file. 
 to run the pre-writen test 
-	```
-	source ./run.sh 
-	```
+```
+source ./run.sh source.asm
+```
+for gui 
+```
+cd frontent && electron ./ele.js
+```
 and the result SHOULD look like ```LOG.md```
 
 
 or just see the github build [pickle rick](https://github.com/roz3x/vp/runs/885633417?check_suite_focus=true)
 
 # deps 
-sed and gcc 
+sed and gcc (and  electorn )

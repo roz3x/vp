@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<textarea id="input" name="code" id="" cols="30" rows="10">
+SET 0 1
+SET 1 20
+SET 2 38
+SET 3 39
+SET 4 55
+SET 5 100
+SET 6 101
+SET 7 111
+MOV 1 8
+MOV 7 8
+MOV 2 0
+MOV 3 100
+PRINT
+XCMP
+JMP 3
+EXIT
+</textarea>
+<button id="run">run</button>
+<br>
+<textarea id="output" style="background-color: black;color:white; width: 250px ; height: 200px;" ></textarea>
+</body>
+<script>
+    const { exec } = require('child_process')
+    const run = document.getElementById("run")
+    const output = document.getElementById("output")
+    const input = document.getElementById("input")
+    run.onclick = () => {  
+        exec('echo \"'+input.innerHTML + "\" > source.asm" , (err, stdout,stderr) =>  {
+            output.innerHTML = stdout + stderr
+        })
+        exec('cd .. && source  ./run.sh frontend/source.asm', (err, stdout,stderr) =>  {
+            output.innerHTML = stdout + stderr
+        })
+    }
+</script>
+</html>

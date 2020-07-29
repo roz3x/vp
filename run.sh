@@ -1,4 +1,4 @@
-echo -ne 'uint8_t arr[] = { ' > ._a.c ; cat 'source.asm' | sed  -e 's/^#.*//g' \
+echo -ne 'uint8_t arr[] = { ' > ._a.c ; cat $1 | sed  -e 's/^#.*//g' \
 	-e 's/MOV/5/g' \
 	-e 's/SET/1/g' \
 	-e 's/EXIT/0/g' \
