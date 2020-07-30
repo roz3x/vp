@@ -46,6 +46,9 @@
 
 
 # gui 
+contains the sample code from the source file 
+![gui](https://raw.githubusercontent.com/roz3x/vp/master/frontend/gui_sample.jpg)
+
 
 # usage 
 
