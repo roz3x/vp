@@ -39,7 +39,7 @@
 | EXIT  |                               |
 |       | opcode  1                     |
 |       | format  "EXIT"                |
-|       | size    1 bytes               |
+|       | size    1 byte                |
 -----------------------------------------
 
 ```
